@@ -1,0 +1,15 @@
+#item {
+  background-color: red;
+}
+
+.list {
+  background-color: orange;
+}
+
+li {
+  background-color: skyblue;
+}
+
+* {
+  background-color: antiquewhite;
+}

@@ -1,0 +1,15 @@
+.fruits span:first-child {
+  color: red;
+}
+
+.fruits h3:last-child {
+  color: blue;
+}
+
+.fruits *:nth-child(n+2) {
+  background-color: aqua;
+}
+
+.fruits *:not(span) {
+  font-size: 30px;
+}
