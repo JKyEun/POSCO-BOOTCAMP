@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+    }
+    .circle1 {
+      position: absolute;
+      background-color: aqua;
+    }
+    .eye1 {
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      left: 1rem;
+      top: 1rem;
+      background-color: white;
+    }
+    .eye2 {
+      position: absolute;
+      width: 1.1rem;
+      height: 1.1rem;
+      left: 1.15rem;
+      top: 1.15rem;
+      background-color: black;
+    }
+    .angry {
+      opacity: 0;
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      left: 1rem;
+      top: 1rem;
+      background-color: white;
+    }
+    /*눈에 마우스를 갖다대면 화가 남*/
+    .angry:hover {
+      opacity: 1;
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      left: 1rem;
+      top: 1rem;
+      background-image: url("./화난\ 눈\ 오른쪽.png");
+      background-position: center;
+      background-size: contain;
+    }
+    .circle2 {
+      position: absolute;
+      left: 4rem;
+      top: 2rem;
+      background-color: aquamarine;
+    }
+    .circle3 {
+      position: absolute;
+      left: 8rem;
+      top: 3rem;
+      background-color: blue;
+    }
+    .circle4 {
+      position: absolute;
+      left: 12rem;
+      top: 2rem;
+      background-color: darkturquoise;
+    }
+    .circle5 {
+      position: absolute;
+      left: 16rem;
+      top: 3rem;
+      background-color: dodgerblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="circle1">
+    <div class="eye1"></div>
+    <div class="eye2"></div>
+    <div class="angry"></div>
+  </div>
+  <div class="circle2"></div>
+  <div class="circle3"></div>
+  <div class="circle4"></div>
+  <div class="circle5"></div>
+</body>
+</html>
