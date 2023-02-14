@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .orange {
+        background-color: orange;
+      }
+      .skyblue {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="box1 orange">box1</button>
+    <button class="box2 orange" onclick="changeColor2();">box2</button>
+    <script>
+      const boxEl1 = document.querySelector(".box1");
+      const boxEl2 = document.querySelector(".box2");
+      let isOrange = true;
+
+      function changeColor1() {
+        if (isOrange) {
+          boxEl1.classList.remove('orange');
+          boxEl1.classList.add("skyblue");
+          isOrange = false;
+        } else {
+          boxEl1.classList.add("orange");
+          boxEl1.classList.remove("skyblue");
+          isOrange = true;
+        }
+      }
+
+      function changeColor2() {
+        if (isOrange) {
+          boxEl2.classList.remove("orange");
+          boxEl2.classList.add("skyblue");
+          isOrange = false;
+        } else {
+          boxEl2.classList.add("orange");
+          boxEl2.classList.remove("skyblue");
+          isOrange = true;
+        }
+      }
+      
+      const allBox = document.querySelectorAll('.orange');
+      allBox[0].innerText = 'hi!';
+      boxEl1.addEventListener("click", changeColor1);
+    </script>
+  </body>
+</html>
