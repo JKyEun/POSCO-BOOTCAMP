@@ -5,20 +5,20 @@ const inputTask = document.querySelector(".input-task");
 function addTask() {
   if (inputTask.value === "") {
     inputTask.setAttribute("placeholder", "내용을 입력하세요!");
-  } else {
-    const li = document.createElement("li");
-    const checkBox = document.createElement("input");
-    const button = document.createElement("button");
-    button.innerText = "삭제";
-    button.setAttribute("onclick", "removeTask(this);");
-    checkBox.setAttribute("type", "checkbox");
-    checkBox.setAttribute("onclick", "getLine(this);");
-    li.innerText = inputTask.value;
-    todoList.appendChild(li);
-    li.prepend(checkBox);
-    li.appendChild(button);
-    inputTask.value = "";
+    return;
   }
+  const li = document.createElement("li");
+  const checkBox = document.createElement("input");
+  const button = document.createElement("button");
+  button.innerText = "삭제";
+  button.setAttribute("onclick", "removeTask(this);");
+  checkBox.setAttribute("type", "checkbox");
+  checkBox.setAttribute("onclick", "getLine(this);");
+  li.innerText = inputTask.value;
+  todoList.appendChild(li);
+  li.prepend(checkBox);
+  li.appendChild(button);
+  inputTask.value = "";
 }
 
 function removeTask(t) {

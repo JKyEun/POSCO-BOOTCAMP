@@ -11,7 +11,7 @@ class Car {
 
 // 클래스 상속
 class ElecCar extends Car {
-  constructor (brand, color, fuel) {
+  constructor(brand, color, fuel) {
     super(brand, color);
     this.fuel = fuel;
   }
@@ -21,7 +21,7 @@ class ElecCar extends Car {
   }
 }
 
-const tesla = new ElecCar('tesla', 'blue', 'electircity');
+const tesla = new ElecCar("tesla", "blue", "electircity");
 
 console.log(tesla);
 tesla.drive();

@@ -27,12 +27,12 @@ class Triangle extends Shape {
 
 class Circle extends Shape {
   constructor(width, height, radius) {
-    super(width,height);
+    super(width, height);
     this.radius = radius;
   }
 
   getArea() {
-    return Math.PI * (this.radius**2);
+    return Math.PI * this.radius ** 2;
   }
 }
 

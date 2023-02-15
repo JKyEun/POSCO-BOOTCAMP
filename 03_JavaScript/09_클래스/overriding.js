@@ -10,7 +10,7 @@ class Car {
 }
 
 class ElecCar extends Car {
-  constructor (brand, color, fuel) {
+  constructor(brand, color, fuel) {
     super(brand, color);
     this.fuel = fuel;
   }
@@ -21,10 +21,10 @@ class ElecCar extends Car {
   }
 }
 
-const hyundai = new Car('hyundai', 'blue');
+const hyundai = new Car("hyundai", "blue");
 hyundai.showSpec();
 
-const tesla = new ElecCar('tesla', 'red', 'electircity');
+const tesla = new ElecCar("tesla", "red", "electircity");
 tesla.showSpec();
 
 console.log(hyundai instanceof Car);

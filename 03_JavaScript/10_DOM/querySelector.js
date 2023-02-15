@@ -1,3 +1,3 @@
-const boxEl = document.getElementsByClassName('box');
+const boxEl = document.getElementsByClassName("box");
 
-boxEl.innerText = 'I am box';
+boxEl.innerText = "I am box";

@@ -18,7 +18,7 @@ class Car {
     this.brand = brand;
     this.color = color;
   }
-  
+
   drive() {
     console.log(`${this.brand}의 ${this.color}색 자동차가 주행중입니다.`);
   }
