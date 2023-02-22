@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      localStorage.setItem("name", "장경은");
+      console.log(localStorage.getItem("name"));
+
+      localStorage.setItem("number", 1);
+      const num = JSON.parse(localStorage.getItem("number"));
+      console.log(num, typeof num);
+
+      localStorage.removeItem("number");
+
+      console.log(localStorage.length);
+
+      console.log(localStorage.key(0)); // name
+
+      localStorage.clear();
+
+      localStorage.setItem("장경은", "26");
+      sessionStorage.setItem("이효석", "39");
+
+      // const ke = {
+      //   name: "장경은",
+      //   isOld: false,
+      //   hobby: ["농구", "음악"],
+      // }
+      // localStorage.setItem('JSON', JSON.stringify(ke));
+
+      // const getKe = JSON.parse(localStorage.getItem("JSON"));
+      // console.log(getKe);
+    </script>
+  </head>
+  <body></body>
+</html>
