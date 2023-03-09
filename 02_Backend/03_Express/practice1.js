@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const PORT = 4000;
 
-app.get('/:email/:password/:name/:gender'ç, (req, res) => {
+app.get('/:email/:password/:name/:gender', (req, res) => {
   console.log(req.params);
   res.send(req.params);
 });

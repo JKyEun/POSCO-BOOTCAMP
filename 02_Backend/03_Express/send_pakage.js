@@ -1,27 +1,27 @@
-// @ts-check
-const fs = require('fs').promises;
-const express = require('express');
+// // @ts-check
+// const fs = require('fs').promises;
+// const express = require('express');
 
-const server = express();
-const PORT = 4000;
+// const server = express();
+// const PORT = 4000;
 
-// http://localhost:4000/
-server.use('/', async (req, res, next) => {
-  console.log('미들웨어 1');
-  req.reqTime = new Date();
-  req.fileContent = await fs.readFile('../package.json', 'utf-8');
-  next();
-});
+// // http://localhost:4000/
+// server.use('/', async (req, res, next) => {
+//   console.log('미들웨어 1');
+//   req.reqTime = new Date();
+//   req.fileContent = await fs.readFile('../package.json', 'utf-8');
+//   next();
+// });
 
-server.use((req, res, next) => {
-  console.log('미들웨어 2');
-  console.log(
-    `요청 시간은 ${req.reqTime} 입니다.`,
-    `pakage.json의 내용을 보여드릴게요! \n ${req.fileContent}`
-  );
-  res.send(req.fileContent);
-});
+// server.use((req, res, next) => {
+//   console.log('미들웨어 2');
+//   console.log(
+//     `요청 시간은 ${req.reqTime} 입니다.`,
+//     `pakage.json의 내용을 보여드릴게요! \n ${req.fileContent}`
+//   );
+//   res.send(req.fileContent);
+// });
 
-server.listen(PORT, () => {
-  console.log(`익스프레스 서버가 ${PORT}번 포트에서 작동 중입니다.`);
-});
+// server.listen(PORT, () => {
+//   console.log(`익스프레스 서버가 ${PORT}번 포트에서 작동 중입니다.`);
+// });
