@@ -1,19 +1,16 @@
 module.exports = {
-  extends: ['airbnb-base'],
-  rules: {
-    'linebreak-style': 0,
-    'no-console': 'off',
-    'operator-linebreak': 'off',
-    'consistent-return': 'off',
-    'nonblock-statement-body-position': 'off',
-    'import/no-extraneous-dependencies': 'off',
-    curly: 'off',
+  env: {
+    browser: true,
+    es2021: true,
   },
+  extends: ['eslint:recommended', 'plugin:react/recommended'],
+  overrides: [],
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
     ecmaVersion: 'latest',
     sourceType: 'module',
+  },
+  plugins: ['react'],
+  rules: {
+    'react/prop-types': 'off',
   },
 };
