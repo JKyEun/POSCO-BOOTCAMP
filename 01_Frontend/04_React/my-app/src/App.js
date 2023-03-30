@@ -1,11 +1,11 @@
 import './App.css';
 import React from 'react';
-import ReactFragment from './components/ReactFragment';
+import PracticeTimerRender from './components/PracticeTimerRender';
 
 function App() {
   return (
     <div className="App">
-      <ReactFragment />
+      <PracticeTimerRender />
     </div>
   );
 }
