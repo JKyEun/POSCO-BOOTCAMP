@@ -7,13 +7,13 @@ import BoardDetail from './components/BoardDetail';
 import Header from './components/Header';
 import NotFound from './components/NotFound';
 import Home from './components/Home';
-import TestRedux from './components/TestRedux';
+import ListContainer from './components/ListContainer';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <TestRedux />
+      <ListContainer />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
