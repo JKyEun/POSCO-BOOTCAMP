@@ -1,3 +1,5 @@
+import React from 'react';
+
 function Inline() {
   return (
     <div style={{ fontSize: '32px', backgroundColor: 'orange' }}>

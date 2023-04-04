@@ -23,7 +23,7 @@ export default function Comparing() {
   };
 
   const reRender = () => {
-    setRender((cur) => !cur);
+    setRender(!render);
   };
 
   return (
