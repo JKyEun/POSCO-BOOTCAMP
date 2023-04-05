@@ -15,6 +15,9 @@ export default function Header() {
           <li>
             <Link to="/board">게시판</Link>
           </li>
+          <li>
+            <Link to="/todo">투두리스트</Link>
+          </li>
         </ul>
       </nav>
     </>

@@ -1,6 +1,6 @@
-const weight = 100;
+const weightState = 100;
 
-export default function weightReducer(state = weight, action) {
+export default function weight(state = weightState, action) {
   if (action.type === '증가') {
     const date = new Date().getDate();
     state = state + date;

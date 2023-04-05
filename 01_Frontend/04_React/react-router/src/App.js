@@ -13,12 +13,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <ListContainer />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/board" element={<Board />} />
         <Route path="/board/:boardID" element={<BoardDetail />} />
+        <Route path="/todo" element={<ListContainer />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
